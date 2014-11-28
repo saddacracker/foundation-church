@@ -19,29 +19,38 @@
     li a {
         text-transform: uppercase;
         font-family: @font-family-sans-serif;
-        font-size: 1.1em;
-        padding-top: 81px;
-        padding-bottom: 34px;
-        padding-right: 0px;
-        padding-left: 0px;
+        
+        @media (min-width: @screen-sm-min) { 
+            font-size: 1.1em;
+            padding-top: 81px;
+            padding-bottom: 34px;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
         
         // Use margin instead of padding on main nav to give the 
         // right bottom border length for the active state
-        margin-left: @navbar-padding-horizontal;
-        margin-right: @navbar-padding-horizontal;
+        @media (min-width: @screen-sm-min) { 
+            margin-left: @navbar-padding-horizontal;
+            margin-right: @navbar-padding-horizontal;
+        }
     }
     
     // move this to site/state.less?
     li.active a {
-        padding-bottom: 24px;
-        border-bottom: 10px solid @brand-primary;
+        @media (min-width: @screen-sm-min) { 
+            padding-bottom: 24px;
+            border-bottom: 10px solid @brand-primary;
+        }
     }
 
 }
 
 .navbar-nav.navbar-right {
-    li:last-child a {
-        margin-right: 0px;
+    @media (min-width: @screen-sm-min) { 
+        li:last-child a {
+            margin-right: 0px;
+        }
     }
 }
 
