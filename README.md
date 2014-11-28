@@ -10,25 +10,20 @@ Currently, Mandrill and Cloudinary accounts are setup under 'cardwell.john+fc@gm
 * Install Mongo DB (I used Homebrew)
 
 * Make sure Mongo DB is running 
-
 `$ mongod`
 
 * Install [Keystone Generator] (http://keystonejs.com/getting-started/)
-
 `$ npm install -g generator-keystone`
 
 * Create project folder
-
 `$ mkdir my-test-project`
     
 * Make sure you're in your project
-
 `$ cd my-test-project`
     
 * Clone this repo into your new project folder
     
 * Start Keystone
-
 `$ node keystone`
     
 You will get an error because you don't have the keys for Mandrill or Cloudinary set in your dotenv file
