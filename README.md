@@ -12,9 +12,8 @@ Install Mongo DB (I used Homebrew)
 Make sure Mongo DB is running 
     - mongod
 
-Install Keystone Generator
-    - http://keystonejs.com/getting-started/
-    - $ npm install -g generator-keystone
+Install Keystone Generator http://keystonejs.com/getting-started/
+    $ npm install -g generator-keystone
 
 Create project folder
     - $ mkdir my-test-project
