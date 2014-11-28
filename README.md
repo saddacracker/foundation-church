@@ -3,6 +3,32 @@ foundation-church
 
 A new church plant in Everett. Built on Jesus
 
-Currently, Mandrill and CLoudinary accounts are setup under 'cardwell.john+fc@gmail.com'
+Currently, Mandrill and Cloudinary accounts are setup under 'cardwell.john+fc@gmail.com'
 
-Uses Node Keystone for CMS etc...
+Install Node
+
+Install Mongo DB (I used Homebrew)
+
+Make sure Mongo DB is running 
+    - mongod
+
+Install Keystone Generator
+    - http://keystonejs.com/getting-started/
+    - $ npm install -g generator-keystone
+
+Create project folder
+    - $ mkdir my-test-project
+    
+Make sure you're in your project
+    - $ cd my-test-project
+    
+Clone this repo into your new project folder
+    
+Start Keystone
+    - $ node keystone
+    
+You will get an error because you don't have the keys for Mandrill or Cloudinary set in your dotenv file
+    - get a Mandrill acount (api for sending mail)
+    - get a Cloudinary account (api for images)
+    - update your dotenv file (or create one)
+    - run $ node keystone again
