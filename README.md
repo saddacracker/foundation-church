@@ -26,7 +26,7 @@ Currently, Mandrill and Cloudinary accounts are setup under 'cardwell.john+fc@gm
 * Start Keystone
 `$ node keystone`
     
-You will get an error because you don't have the keys for Mandrill or Cloudinary set in your dotenv file
+**You will get an error because you don't have the keys for Mandrill or Cloudinary set in your dotenv file**
 
 1. get a Mandrill acount (api for sending mail)
 
