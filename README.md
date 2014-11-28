@@ -16,10 +16,10 @@ Currently, Mandrill and Cloudinary accounts are setup under 'cardwell.john+fc@gm
 `$ npm install -g generator-keystone`
 
 * Create project folder
-`$ mkdir my-test-project`
+`$ mkdir foundation-church`
     
 * Make sure you're in your project
-`$ cd my-test-project`
+`$ cd foundation-church`
     
 * Clone this repo into your new project folder
     
