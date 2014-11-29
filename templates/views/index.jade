@@ -2,6 +2,7 @@ extends ../layouts/default
 
 include ../mixins/home-welcome
 include ../mixins/home-sundays
+include ../mixins/home-who-we-are
 
 block content
     
@@ -36,3 +37,8 @@ block content
     #home-sundays
         .container
             mixin home-sundays()
+            
+            
+    #home-who-we-are
+        .container
+            mixin home-who-we-are()
