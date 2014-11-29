@@ -26,10 +26,10 @@ exports.initLocals = function(req, res, next) {
     var locals = res.locals;
     
     locals.navLinks = [
-        { label: 'Welcome',        key: 'home',           href: '/#home-welcome' },
-        { label: 'Sundays',        key: 'sundays',        href: '/#home-sundays' },
-        { label: 'Who We Are',     key: 'who-we-are',     href: '/#home-who-we-are' },
-        { label: 'Jesus',          key: 'jesus',          href: '/#home-jesus' },
+        { label: 'Welcome',        key: 'home',           href: '/', section: '#home-welcome' },
+        { label: 'Sundays',        key: 'sundays',        href: '/', section: '#home-sundays' },
+        { label: 'Who We Are',     key: 'who-we-are',     href: '/', section: '#home-who-we-are' },
+        { label: 'Jesus',          key: 'jesus',          href: '/', section: '#home-jesus' },
         { label: 'Connect',        key: 'connect',        href: '/connect' }
         // { label: 'Give',           key: 'give',           href: '/give' },
         // { label: 'Blog',        key: 'blog',        href: '/blog' },

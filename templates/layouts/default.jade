@@ -79,7 +79,7 @@ html(class=section)
                             //- @TODO: Use routes/middleware for links?
                             
                             each link in navLinks
-                                li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+                                li(class=(section == link.key ? 'active' : null)): a(href=link.href, data-id=link.section, class=(link.section ? 'scroll-link' : null))= link.label
                                 
                             //- @NOTE: removed signin logic for now
                             
