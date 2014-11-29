@@ -6,24 +6,28 @@ mixin home-sundays()
             h3 Sunday
             
             .row
-                .col-md-2
+                .col-xs-2
                     p 9am
-                    p kids
-                .col-md-2
+                    p.kids kids
+                .col-xs-2
                     p 11am
-                    p kids
-                .col-md-2
+                    p.kids kids
+                .col-xs-2
                     p 5pm
-                    p kids
+                    p.kids kids
     
         .col-md-6
             h2 Location
             p 2730 Oaks Ave. Everett, WA 98201
-            p 206 816-3842
+            p
+                a(href="tel:+12068163842").tel 206 816-3842
             
             p
-                a(href='contact/').btn.btn-primary Connect
+                a(href='contact/').btn.btn-primary.btn-lg Connect
                 
     .row
         .col-md-12
-            img(src='http://placehold.it/1140x300', alt"map of church location").img-responsive
+            //- img(src='http://placehold.it/1140x300', alt"map of church location").img-responsive
+            .google-maps
+                iframe(width="1140", height="300", frameborder="0", style="border:0", src="https://www.google.com/maps/embed/v1/place?q=2730%20Oaks%20Ave.%20Everett%2C%20WA%2098201&key=AIzaSyC1ShHfOK0t9bZwfe0Sx9wc85issO_Qy3c")
+                

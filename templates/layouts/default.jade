@@ -2,7 +2,7 @@ include ../mixins/flash-messages
 include ../mixins/svg-logo
 
 doctype html
-html
+html(class=section)
 
     //- HTML HEADER
     head
@@ -65,21 +65,21 @@ html
                             
                             //- http://alijafarian.com/responsive-page-scrolling-with-jquery-and-bootstrap/
                             
-                            li.active
-                                a(href='#home-welcome', data-id='home-welcome').scroll-link WELCOME
-                            li
-                                a(href='#home-sundays', data-id='home-sundays').scroll-link SUNDAYS
-                            li
-                                a(href='#home-who-we-are', data-id='home-who-we-are').scroll-link WHO WE ARE
-                            li
-                                a(href='#home-jesus', data-id='home-jesus').scroll-link JESUS
-                            li
-                                a(href='#home-connect', data-id='home-connect').scroll-link CONNECT
+                            //- li.active
+                            //-     a(href='/#home-welcome', data-id='home-welcome').scroll-link WELCOME
+                            //- li
+                            //-     a(href='/#home-sundays', data-id='home-sundays').scroll-link SUNDAYS
+                            //- li
+                            //-     a(href='/#home-who-we-are', data-id='home-who-we-are').scroll-link WHO WE ARE
+                            //- li
+                            //-     a(href='/#home-jesus', data-id='home-jesus').scroll-link JESUS
+                            //- li
+                            //-     a(href='#home-connect', data-id='home-connect').scroll-link CONNECT
                                 
                             //- @TODO: Use routes/middleware for links?
                             
-                            //- each link in navLinks
-                            //- li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
+                            each link in navLinks
+                                li(class=(section == link.key ? 'active' : null)): a(href=link.href)= link.label
                                 
                             //- @NOTE: removed signin logic for now
                             
