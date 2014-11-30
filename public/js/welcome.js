@@ -5,10 +5,14 @@
 
 $(document).ready(function() {
     
+    // background photo
+    $.backstretch("/images/hero.jpg");
+    
+    
+    // Update nav if user came from another page
+    
     if (document.location.hash) {
-        
-        // Update nav if user came from another page
-        
+                
         $('.navbar-nav li').removeClass("active");
         $("a[data-id='" + document.location.hash +"']").parent().addClass("active");
     }
