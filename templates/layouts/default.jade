@@ -79,7 +79,10 @@ html(class=section)
                             //- @TODO: Use routes/middleware for links?
                             
                             each link in navLinks
-                                li(class=(section == link.key ? 'active' : null)): a(href=link.href, data-id=link.section, class=(link.section ? 'scroll-link' : null))= link.label
+                                if(link.section != undefined)
+                                    li(class=(section == link.key ? 'active' : null)): a(href=link.href+link.section, data-id=link.section, class=(link.section ? 'scroll-link' : null))= link.label
+                                else
+                                    li(class=(section == link.key ? 'active' : null)): a(href=link.href, data-id=link.section, class=(link.section ? 'scroll-link' : null))= link.label
                                 
                             //- @NOTE: removed signin logic for now
                             
@@ -109,7 +112,7 @@ html(class=section)
 
 
         //- FOOTER
-        .container: #footer
+        .container.footer: #footer
 
             //- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
             p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.

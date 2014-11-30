@@ -2,7 +2,17 @@
 // Yes it's a hack. A better solution would be to use clever routing
 
 $(document).ready(function() {
-    // navigation click actions    
+    
+    if (document.location.hash) {
+        
+        // Update nav if user came from another page
+        
+        $('.navbar-nav li').removeClass("active");
+        $("a[data-id='" + document.location.hash +"']").parent().addClass("active");
+    }
+    
+    // navigation click actions
+    
     $('.scroll-link').on('click', function(event){
         event.preventDefault();
         var sectionID = $(this).attr("data-id");
@@ -21,16 +31,16 @@ $(document).ready(function() {
     });
     
     
-    // scroll to top action
-    $('.scroll-top').on('click', function(event) {
-        event.preventDefault();
-        $('html, body').animate({scrollTop:0}, 'slow');         
-    });
-    // mobile nav toggle
-    $('#nav-toggle').on('click', function (event) {
-        event.preventDefault();
-        $('#main-nav').toggleClass("open");
-    });
+    // @TODO: scroll to top action
+    // $('.scroll-top').on('click', function(event) {
+    //     event.preventDefault();
+    //     $('html, body').animate({scrollTop:0}, 'slow');
+    // });
+    // // mobile nav toggle
+    // $('#nav-toggle').on('click', function (event) {
+    //     event.preventDefault();
+    //     $('#main-nav').toggleClass("open");
+    // });
 });
 
 
