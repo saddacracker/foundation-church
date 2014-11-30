@@ -1,6 +1,8 @@
 // This is only loaded on the welcome/home page since that's the only page we do the scrolling thingie
 // Yes it's a hack. A better solution would be to use clever routing
 
+// Mostly stolen from http://alijafarian.com/responsive-page-scrolling-with-jquery-and-bootstrap/
+
 $(document).ready(function() {
     
     if (document.location.hash) {
