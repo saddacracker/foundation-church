@@ -13,7 +13,7 @@ exports = module.exports = function(req, res) {
 	};
 
 
-    // Load Pastors
+    // Load Pastors (users with type pastor)
     view.on('init', function(next) {
     
         var q = keystone.list('User').model.find()
