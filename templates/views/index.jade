@@ -2,7 +2,7 @@ extends ../layouts/default
 
 include ../mixins/home-welcome
 include ../mixins/home-sundays
-include ../mixins/home-who-we-are
+//- include ../mixins/home-who-we-are
 
 block content
     
@@ -41,4 +41,18 @@ block content
             
     #home-who-we-are
         .container
-            mixin home-who-we-are()
+            //- mixin home-who-we-are(data.pastors)
+            
+            h2 Who we are
+    
+            hr
+    
+            p.section-description Foundation Church is built on the guiding principle that Christ is the foundation of the Church, the life of the Christian and the motivation for all that we do. In our unique situation, we are able to honor the work the Lord has done to move us to where we are currently. Mars Hill Church will always hold the history of our new church and we will be forever grateful for the legacy we have been given. Looking forward, we will continue with much of what Mars Hill has began with some changes for greater health and longevity.
+
+            .row
+                if data.pastors.length
+                    each pastor in data.pastors
+                        .col-sm-3.col-xs-6
+                            img(src=pastor._.image.fit(300,300)).pastor-photo.img-responsive
+                            h4.pastor-name #{pastor.name.first} #{pastor.name.last}
+                            p.pastor-title= pastor.title
