@@ -3,6 +3,7 @@ extends ../layouts/default
 include ../mixins/home-welcome
 include ../mixins/home-sundays
 //- include ../mixins/home-who-we-are
+include ../mixins/home-jesus
 
 block content
     
@@ -56,3 +57,7 @@ block content
                             img(src=pastor._.image.fit(300,300)).pastor-photo.img-responsive
                             h4.pastor-name #{pastor.name.first} #{pastor.name.last}
                             p.pastor-title= pastor.title
+                            
+    #home-jesus
+        .container
+            mixin home-jesus()
