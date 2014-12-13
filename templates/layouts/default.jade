@@ -18,6 +18,9 @@ html(class=section)
         // Google fonts (for serif faces - we host the sans-serif faces in the /fonts directory)
         link(href="http://fonts.googleapis.com/css?family=Lora:400,400italic", rel="stylesheet", type='text/css')
         
+        //- Font Awesome Icons
+        link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet')
+        
         //- Customise the stylesheet for your site by editing /public/styles/site.less
         //- All .less files will be automatically compiled and minified in production.
         link(href="/styles/site.min.css", rel="stylesheet")
@@ -113,10 +116,25 @@ html(class=section)
 
         //- FOOTER
         
-        //- .container.footer: #footer
-        //-
-        //-     //- You don't _have_ to include a link saying your site is powered by KeystoneJS, but we appreciate it!
-        //-     p Powered by <a href="http://keystonejs.com" target="_blank">KeystoneJS</a>.
+        footer#footer-info
+            .container
+                .row
+                    .col-md-4
+                        i.fa.fa-twitter.fa-lg
+                        i.fa.fa-facebook.fa-lg
+                        i.fa.fa-pinterest.fa-lg
+                        
+                        
+                    .col-md-8
+                        p Foundation Church  |  2730 Oaks Ave. Everett, WA 98201  |  (206) 816-3842
+                        p Copyright &copy; 2015 Foundation Church. All rights reserved.
+                        
+        footer#footer-logo
+            .container
+                .row
+                    .col-md-12
+                        a.footer-brand(href='/')
+                            mixin svg-logo()
 
 
         //- JAVASCRIPT
