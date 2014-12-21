@@ -47,7 +47,7 @@ Enquiry.schema.methods.sendNotificationEmail = function(callback) {
 			to: admins,
 			from: {
 				name: 'Foundation Church',
-				email: 'cardwell.john@gmail.com'
+				email: 'connect@foundationchurch.org'
 			},
 			subject: 'New Enquiry for Foundation Church',
 			enquiry: enqiury
