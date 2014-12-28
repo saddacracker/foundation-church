@@ -3,20 +3,37 @@
     padding-top: 60px;
     padding-bottom: 100px;
     
-    h2 {
+    h2, h3, h4 {
         color: black;
+    }
+    
+    h2, h3 {
         text-transform: uppercase;
         font-size: 45px;
         text-align: center;
     }
     
-    hr {
-        border-top: 1px solid rgba(0,0,0, .4)
+    h3 {
+        margin-top: 1.5em;
     }
     
-    p.section-description {
-        color: black;
-        margin-top: 2em;
+    hr {
+        border-top: 1px solid rgba(0,0,0, .4);
+        
+        &.light {
+            border-top: 1px solid rgba(0,0,0, .1);
+        }
+    }
+    
+    .section-subtitle {
+        text-transform: none;
+        font-family: @font-family-serif;
+        color: rgba(0,0,0, .9);
+    }
+    
+    .section-description {
+        color: rgba(0,0,0, .5);
+        margin-top: 0;
         margin-bottom: 3em;
     }
     

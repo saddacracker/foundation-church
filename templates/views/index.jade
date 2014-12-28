@@ -46,8 +46,6 @@ block content
     
             hr
             
-            mixin core-values()
-
             .row
                 if data.pastors.length
                     each pastor in data.pastors
@@ -55,6 +53,8 @@ block content
                             img(src=pastor._.image.fit(300,300)).pastor-photo.img-responsive
                             h4.pastor-name #{pastor.name.first} #{pastor.name.last}
                             p.pastor-title= pastor.title
+                                                        
+            mixin core-values()
                             
     #home-jesus
         .container
