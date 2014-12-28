@@ -30,7 +30,8 @@ exports.initLocals = function(req, res, next) {
         { label: 'Sundays',        key: 'sundays',        href: '/', section: '#home-sundays' },
         { label: 'Who We Are',     key: 'who-we-are',     href: '/', section: '#home-who-we-are' },
         { label: 'Jesus',          key: 'jesus',          href: '/', section: '#home-jesus' },
-        { label: 'Connect',        key: 'connect',        href: '/connect' }
+        { label: 'Connect',        key: 'connect',        href: '/connect' },
+        { label: 'Give',           key: 'give',           href: 'https://pushpay.com/pay/foundationchurch' }
         // { label: 'Give',           key: 'give',           href: '/give' },
         // { label: 'Blog',        key: 'blog',        href: '/blog' },
     ];
