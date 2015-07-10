@@ -46,10 +46,10 @@ block content
     
             hr
             
-            .row
+            .row.pastor-row
                 if data.pastors.length
                     each pastor in data.pastors
-                        .col-sm-3.col-xs-6
+                        .col-sm-3.col-xs-6.pastor-container
                             img(src=pastor._.image.fit(300,300)).pastor-photo.img-responsive
                             h4.pastor-name #{pastor.name.first} #{pastor.name.last}
                             p.pastor-title= pastor.title
